@@ -52,14 +52,11 @@ nav ul li {
     display: block;
     flex-grow:1;
     text-align: center;
-
-   
 }
 
 section {
     margin-top: 20px;
     margin-left: 36px;
-   
 }
 
 section h2 {
@@ -76,13 +73,8 @@ section p {
 
 footer {
    
-    
     background-color: #75C9C8;
-    
     align-content:center ;
     text-align:center;
-    
     height: 35px;
-    
-   
 }
