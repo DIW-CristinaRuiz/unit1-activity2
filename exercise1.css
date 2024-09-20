@@ -74,14 +74,11 @@ nav ul {
     
     list-style-type: none;
     padding: 6px;
-    /* background-color: #80A1D4; */
     margin-top: 3px;
     display: flex;
-
 }
 
 a {
-    
     text-decoration: none;
     color: #000000;
     text-align: center;
@@ -89,7 +86,6 @@ a {
 
 a:hover {
     color: #F7F4EA;
-
 }
 
 li {
@@ -118,7 +114,6 @@ section {
     border-bottom: solid #80A1D4 ;
     border-left: solid #80A1D4 ;
     box-shadow: 3px 5px 6px #b3a9da;
-
 }
 
 section h2 {
@@ -134,7 +129,6 @@ section p {
     color: #6b6b6b;
     padding-bottom: 25px;
     font-family: "Roboto", sans-serif;
-  
 }
 
 footer {
