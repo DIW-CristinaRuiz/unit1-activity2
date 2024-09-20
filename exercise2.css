@@ -38,8 +38,8 @@
   
 body {
     font-family: "Roboto", sans-serif;
-    background-color: #ffffff;
-    color: #000000;
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(0, 0%, 0%);
     margin: 20px;
     display: flex;
     flex-direction: column;
@@ -57,7 +57,7 @@ main {
 }
 
 header {
-    background-color: #75C9C8;
+    background-color: hsl(179, 44%, 62%);
     text-align: center;
     padding: 1%;
 }
