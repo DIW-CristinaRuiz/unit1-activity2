@@ -1,7 +1,7 @@
 
 @font-face {
     font-family: "Roboto";
-    src: url("../unit1-activity1/fonts/Roboto/Roboto-Black.ttf");
+    src: url("../unit1-activity1/fonts/Roboto/Roboto-Black.ttf"),url("../unit1-activity1/fonts/Roboto/Roboto-Black.woff2");
 }
 @media screen and (min-width: 800px) {
     h1 {
