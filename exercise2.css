@@ -18,7 +18,10 @@
     --color5: #80A1D4;
     --fontprimary: "Roboto", system-ui;
 }
-
+* {
+    /*evitar desbordamientos*/
+    box-sizing: border-box; 
+}
 body {
     font-family: "Roboto", sans-serif;
     background-color: var(--color2);
