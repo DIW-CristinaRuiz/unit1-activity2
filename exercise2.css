@@ -1,7 +1,13 @@
+
 @font-face {
     font-family: "Roboto";
-    src: url("../unit1-activity1/fonts/Roboto/Roboto-Black.ttf") format('truetype'),
-        url("../unit1-activity1/fonts/Roboto/Roboto-Black.woff2") format('woff2');
+    src: url("../fonts/Roboto/Roboto-Black.ttf") format('truetype'),
+        url("../fonts/Roboto/Roboto-Black.woff2") format('woff2');
+}
+.unlock-regular {
+    font-family: "Unlock", serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 :root {
@@ -10,70 +16,29 @@
     --color3: #b3a9da;
     --color4: hsl(179, 44%, 62%);
     --color5: #80A1D4;
-    --fontprimary: "Roboto",
-        system-ui;
-}
-
-@media screen and (min-width: 800px) {
-    h1 {
-        font-size: 4rem;
-    }
-
-    h2 {
-        font-size: 2.5rem;
-    }
-
-    h3 {
-        font-size: 1.75rem;
-    }
-
-    h4 {
-        font-size: 1rem;
-    }
-
-    body {
-        font-size: 1rem;
-    }
-
-    h1,
-    h2,
-    h3,
-    h4 {
-        line-height: 1;
-    }
-
-    p {
-        margin-left: 30px;
-        margin-right: 30px;
-    }
-
-}
-
-.unlock-regular {
-    font-family: "Unlock", serif;
-    font-weight: 400;
-    font-style: normal;
+    --fontprimary: "Roboto", system-ui;
 }
 
 body {
     font-family: "Roboto", sans-serif;
     background-color: var(--color2);
     color: var(--color1);
-    margin: 20px;
+    margin: 0;
+    padding: 0;
+     /* por defecto se colocaran en columna los elementos hijos*/
     display: flex;
     flex-direction: column;
+    /*Me aseguro que ocupe toda la pantalla*/
     min-height: 100vh;
+    
 }
+
 
 html,
 body {
     height: 100%;
     margin: 0;
     padding: 0;
-}
-
-main {
-    flex-grow: 1;
 }
 
 header {
@@ -96,8 +61,7 @@ h2 {
 
 nav ul {
     list-style-type: none;
-    /* padding: 2px;
-    margin-top: 3px; */
+    
     display: flex;
     margin: 0;
     padding: 2px;
@@ -115,17 +79,9 @@ a {
 a:hover {
     color: var(--color2);
 }
-
-/* li {
-    background-color: var(--color5);
-    border: 1px solid var(--color1);
-    
-} */
-
 li:hover {
     background-color: var(--color3);
 }
-
 nav ul li {
     margin: 1px;
     padding: 1px;
@@ -134,37 +90,53 @@ nav ul li {
     text-align: center;
 }
 
+main {
+    display: flex;
+    flex-direction: column; /* En pantallas pequeñas, las secciones estarán en columna */
+    flex-grow: 1;
+    width: 100%;
+    padding: 10px;
+}
+
 
 section {
-    margin-top: 30px;
-    margin-left: 30px;
-    width: 97%;
-    height: 26%;
-    flex-grow: 3;
-    align-content: center;
-    border-bottom: solid var(--color5);
-    border-left: solid var(--color5);
+    margin: 10px;
+    padding: 15px;
+    border: 2px solid var(--color5);
     box-shadow: 3px 5px 6px var(--color3);
+    background-color: var(--color2);
+    flex-grow: 1; /* expandir secciones*/
 }
+
 
 section h2 {
     font-size: 25px;
     color: var(--color3);
     font-weight: bold;
-    margin-left: 30px;
-
 }
 
 section p {
     font-size: 18px;
     color: var(--color1);
-    padding-bottom: 25px;
-    font-family: "Roboto", sans-serif;
+}
+
+
+@media screen and (min-width: 800px) {
+    main {
+        flex-direction: row; /* Cuando la pantalla sea grande, cambia a filas */
+        justify-content: space-between; 
+        align-items: flex-start;
+    }
+
+    section {
+        width: 30%; /*Ocupe el 30% del ancho*/
+        margin: 10px;
+    }
 }
 
 footer {
     background-color: var(--color4);
     text-align: center;
-    padding: 10px;
-    text-align: center;
+    /* padding: 9px; */
+    /* margin-top: 20px; */
 }
